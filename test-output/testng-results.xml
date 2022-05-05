@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-01T18:46:29 IST" name="Default suite" finished-at="2022-05-01T18:47:04 IST" duration-ms="34129">
+    <groups>
+    </groups>
+    <test started-at="2022-05-01T18:46:29 IST" name="Default test" finished-at="2022-05-01T18:47:04 IST" duration-ms="34129">
+      <class name="test.loginTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.loginTest@28f2a10f]" started-at="2022-05-01T18:46:30 IST" name="launchBrowser" finished-at="2022-05-01T18:46:55 IST" duration-ms="25582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginWithValidInput()[pri:0, instance:test.loginTest@28f2a10f]" started-at="2022-05-01T18:46:55 IST" name="loginWithValidInput" finished-at="2022-05-01T18:47:04 IST" duration-ms="8496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidInput -->
+      </class> <!-- test.loginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
