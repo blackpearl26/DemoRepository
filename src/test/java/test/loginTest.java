@@ -5,12 +5,16 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import POM.loginPage;
 import pojo.OpenBrowser;
 import utilities.Excel;
+
+@Listeners(TestListen.class)
 
 public class loginTest {
 	WebDriver driver;
@@ -28,6 +32,7 @@ public class loginTest {
 		String pass = Excel.getData("Zerodha", 1, 1);
 		loginpage.enterPassword(pass);
 		loginpage.clickLogin();
+		Assert.assertTrue(false);
 		String pinValue= Excel.getData("Zerodha", 1, 2);
 		loginpage.enterPin(driver, pinValue);
 		loginpage.clickContinue();
